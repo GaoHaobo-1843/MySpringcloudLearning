@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@gitee.com:haonb/spring-cloud-demo.git
+          basedir: D:\Test\config
+#          search-paths: testPath
+#          # 如果我们的Git仓库需要权限访问，那么可以通过配置下面的两个属性来实现
+#          uri: https://gitee.com/haonb/spring-cloud-demo.git
+#          username: 1720738317@qq.com
+#          password: ghb14916253649
+
+server:
+    port: 1303
+
+encrypt:
+  key: gaohb
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1001/eureka/
+management:
+  security:
+    enabled: false
+
