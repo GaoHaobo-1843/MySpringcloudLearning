@@ -10,4 +10,5 @@ public class    AlibabaSentinelRateLimitingApplication {
         SpringApplication.run(AlibabaSentinelRateLimitingApplication.class, args);
     }
 
+
 }
